@@ -28,6 +28,12 @@ public static void main (String[] args) {
     for (String product : store.products()) {
         System.out.println(product);
     }
+    
+    Purchase purchase = new Purchase("milk", 4, 2);
+    System.out.println( "the total price of a purchase containing four milks is " + purchase.price() );
+    System.out.println( purchase );
+    purchase.increaseAmount();
+    System.out.println( purchase );
 	
 }
 	
