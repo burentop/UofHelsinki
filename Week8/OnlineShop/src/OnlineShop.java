@@ -23,6 +23,11 @@ public static void main (String[] args) {
     System.out.println("stocks:");
     System.out.println("coffee:  " + store.stock("coffee"));
     System.out.println("sugar: " + store.stock("sugar"));
+    
+    System.out.println("products:");
+    for (String product : store.products()) {
+        System.out.println(product);
+    }
 	
 }
 	
