@@ -45,7 +45,7 @@ public class RegistrationPlate {
 
     @Override
     public int hashCode() {
-        if (this.regCode == null) {
+        if (this.regCode == null && this.country == null) {
             return 7;
         }
 
