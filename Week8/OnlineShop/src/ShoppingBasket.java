@@ -22,5 +22,11 @@ private Map<String, Purchase> basket;
         }
         return total;
     }
+    
+    public void print() {
+        for (Purchase purchase : basket.values()) {
+            System.out.println(purchase);
+        }
+    }
 	
 }
