@@ -10,8 +10,12 @@ private Map<String, Purchase> basket;
     }
     
     public void add(String product, int price) {
-        Purchase purchase = new Purchase(product, 1, price);
-        basket.put(product, purchase);
+        if (basket.get(product) != null) {
+            basket.get(product).increaseAmount();
+        } else {
+            Purchase purchase = new Purchase(product, 1, price);
+            basket.put(product, purchase);
+        }
     }
     
     public int price() {
